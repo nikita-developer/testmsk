@@ -16,11 +16,7 @@ const { item } = defineProps<{
       >карикатура</span
     >
     <figure class="slider-item__media">
-      <NuxtImg
-        tabindex="0"
-        aria-label="Картинка карикатуры"
-        :src="`/media/${item?.media}`"
-      />
+	    <img :src="`media/${item?.media}`" alt="">
       <figcaption tabindex="0" :aria-label="item?.title">
         {{ item?.title }}
       </figcaption>
