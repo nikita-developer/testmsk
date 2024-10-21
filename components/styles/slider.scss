@@ -1,0 +1,33 @@
+.carousel-nav {
+  display: flex;
+  column-gap: 22px;
+
+  button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__prev {
+    background-image: url('@/public/media/prev.svg');
+
+    &:focus {
+      background-image: url('@/public/media/prev-focus.svg');
+    }
+  }
+
+  &__next {
+    background-image: url('@/public/media/next.svg');
+
+    &:focus {
+      background-image: url('@/public/media/next-focus.svg');
+    }
+  }
+}
+
+.carousel__slide {
+  padding-right: 22px;
+}

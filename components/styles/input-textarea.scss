@@ -1,0 +1,50 @@
+textarea {
+  width: 100%;
+  padding: 7.5px 16px;
+  background-color: #fff;
+  border: 1px solid rgba(229, 229, 229, 1);
+  outline: none;
+  resize: none;
+  min-height: 128px;
+
+  & + .message-error {
+    margin-top: 4px;
+  }
+
+  &::placeholder {
+    color: rgba(124, 124, 124, 1);
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &:hover {
+    border: 1px solid rgba(124, 124, 124, 1);
+  }
+
+  &:focus {
+    border: 1px solid rgba(124, 124, 124, 1);
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+
+  .message-error {
+    display: none;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  &.error {
+    border: 1px solid rgba(223, 55, 53, 1);
+
+    &::placeholder {
+      color: rgba(223, 55, 53, 1);
+    }
+
+    & + .message-error {
+      display: block;
+      color: rgba(223, 55, 53, 1);
+    }
+  }
+}

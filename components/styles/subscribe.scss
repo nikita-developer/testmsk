@@ -1,0 +1,133 @@
+.subscribe {
+  display: flex;
+
+  &__media {
+    width: 50%;
+
+    @media (max-width: 576px) {
+      width: auto;
+    }
+  }
+
+  &__info {
+    width: 50%;
+
+    @media (max-width: 576px) {
+      width: auto;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    background-color: #902423;
+    background-image: linear-gradient(90deg, #DF3735 0%, #902423 100%);
+    color: #fff;
+    border: 0;
+    padding: 8.5px;
+    margin-top: 32px;
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+}
+
+.subscribe-info {
+  position: relative;
+  border: 1px solid rgba(229, 229, 229, 1);
+  box-shadow: 0 1px 2px 0 rgba(143, 143, 143, 0.1),
+  0 4px 4px 0 rgba(143, 143, 143, 0.09),
+  0 9px 6px 0 rgba(143, 143, 143, 0.05),
+  0 16px 7px 0 rgba(143, 143, 143, 0.01),
+  0 26px 7px 0 rgba(143, 143, 143, 0);
+  padding: 24px 32px 34px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(223, 55, 53, 1);
+    content: '';
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(30, 72, 121, 1);
+    content: '';
+    transform: translate(50%, 50%);
+  }
+
+  &__title {
+    line-height: 42px;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  &__fields {
+    border: 0;
+  }
+
+  &__field {
+    margin-bottom: 10px;
+  }
+}
+
+.subscribe-media {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 20px 13px;
+
+  &::after {
+    height: 214px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    content: '';
+  }
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    content: '';
+    background-image: url('@/public/media/subscribe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: 576px) {
+    height: 0;
+    padding-top: 100%;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    z-index: 1;
+    max-width: 320px;
+  }
+
+  &__description {
+    position: relative;
+    font-size: 11px;
+    line-height: 16px;
+    color: #ffffff;
+    z-index: 1;
+  }
+}

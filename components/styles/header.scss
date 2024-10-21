@@ -1,0 +1,24 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+  box-shadow: 0 6px 13px 0 rgba(69, 69, 69, 0.04),
+  0 23px 23px 0 rgba(69, 69, 69, 0.04),
+  0 52px 31px 0 rgba(69, 69, 69, 0.02),
+  0 92px 37px 0 rgba(69, 69, 69, 0.01),
+  1px 144px 40px 0 rgba(69, 69, 69, 0);
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 15px;
+  }
+
+  &__subltitle {
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
